@@ -138,3 +138,11 @@ button:active {
 	height: 100%;
 	padding: 10px;
 }
+
+.navigation-item:hover {
+	filter: brightness(120%);
+}
+
+.navigation-item:active {
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
