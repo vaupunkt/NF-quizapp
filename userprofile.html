@@ -15,27 +15,31 @@
 	</head>
 	<body>
 		<header>
-			<h1><a href="#">Quiz App - Profile</a></h1>
+			<h1>Profile</h1>
 		</header>
 		<main>
 			<section class="profile">
-				<img src="./assets/profilepicture.jpeg" class="profilepicture" />
+				<img src="./assets/profilepicture.jpeg" class="profile__picture" />
 				<article class="userinformation">
 					<h2>Name LastName</h2>
-					<p class="userdescription">
+					<p class="userinformation__userdescription">
 						Text about the user will go here. Very interesting. So much to read,
 						I don't know where to stop
 					</p>
 					<section class="counter">
-						<section class="button counterlabel">50 Questions</section>
-						<section class="button counterlabel">10 Bookmarks</section>
+						<section class="counter__label">
+							<object class="counter__label__number">50</object> Questions
+						</section>
+						<section class="counter__label">
+							<object class="counter__label__number">10</object> Bookmarks
+						</section>
 					</section>
 				</article>
 			</section>
 			<section class="settings">
 				<h2>Settings</h2>
-				<section class="singleSetting">
-					<p class="settingLabel">Darkmode</p>
+				<section class="settings__singleSetting">
+					<p class="settings__singleSetting__label">Darkmode</p>
 					<label class="switch">
 						<input type="checkbox" />
 						<span class="slider round"></span>
@@ -45,19 +49,19 @@
 		</main>
 		<footer>
 			<ul class="navigation">
-				<li class="navigation-item">
+				<li class="navigation__item">
 					<a href="index.html"
-						><img src="./assets/questions.svg" class="navigation-icon"
+						><img src="./assets/questions.svg" class="navigation__icon"
 					/></a>
 				</li>
-				<li class="navigation-item">
+				<li class="navigation__item">
 					<a href="bookmarks.html"
-						><img src="./assets/bookmarks.svg" class="navigation-icon"
+						><img src="./assets/bookmarks.svg" class="navigation__icon"
 					/></a>
 				</li>
-				<li class="navigation-item navActive">
+				<li class="navigation__item navigation__item--active">
 					<a href="userprofile.html"
-						><img src="./assets/userprofile.svg" class="navigation-icon"
+						><img src="./assets/userprofile.svg" class="navigation__icon"
 					/></a>
 				</li>
 			</ul>

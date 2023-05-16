@@ -1,3 +1,15 @@
+.settings {
+	margin: auto;
+	text-align: center;
+}
+
+.settings__singleSetting {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	padding-top: 20px;
+}
+
 /* The switch - the box around the slider */
 .switch {
 	position: relative;
@@ -59,16 +71,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
-}
-
-.settings {
-	margin: auto;
-	text-align: center;
-}
-
-.singleSetting {
-	display: flex;
-	align-items: center;
-	gap: 30px;
-	padding-top: 20px;
 }

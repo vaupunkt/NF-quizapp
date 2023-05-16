@@ -8,25 +8,25 @@
 	box-shadow: 0px -1px 70px black;
 }
 
-.navigation-item {
+.navigation__item {
 	flex-grow: 1;
 	background-color: #357266;
 }
 
-.navActive {
+.navigation__item--current {
 	background-color: #0e3b43;
 }
 
-.navigation-icon {
+.navigation__icon {
 	width: 100%;
 	height: 100%;
 	padding: 10px;
 }
 
-.navigation-item:hover {
+.navigation__item:hover {
 	filter: brightness(120%);
 }
 
-.navigation-item:active {
+.navigation__item:active {
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
