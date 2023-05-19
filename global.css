@@ -35,8 +35,8 @@ h1 {
 }
 
 main {
-	padding: 50px;
 	display: flex;
 	flex-direction: column;
+	padding: 50px;
 	min-width: 300px;
 }
