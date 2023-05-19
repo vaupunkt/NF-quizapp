@@ -7,13 +7,13 @@
 }
 
 .tag {
-	background-color: #312509;
+	background-color: var(--tag-background-color);
 	border-radius: 5px;
 	padding: 5px;
-	color: rgb(255, 255, 255);
+	color: var(--light-font-color);
 	font-size: 0.8rem;
 }
 
 .tag:hover {
-	color: rgb(211, 211, 211);
+	color: var(--less-light-font-color);
 }
