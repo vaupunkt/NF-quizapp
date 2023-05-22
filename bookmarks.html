@@ -4,82 +4,105 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./global.css" />
+		<script type="text/javascript" src="/javascript/script.js" defer></script>
 
 		<!-- Icons from Linea Iconset. This is a free iconset designed by Dario Ferrando.
         The set is distributed under CCBY license.
         CCBY LICENSE
         http://creativecommons.org/licenses/by/4.0/-->
 
-		<title>Quiz App</title>
+		<title>Bookmarks - Quiz App</title>
 	</head>
 	<body>
 		<header>
-			<h1><a href="#">Quiz App - Bookmarks</a></h1>
+			<h1>Bookmarks</h1>
 		</header>
 		<main>
-			<section class="questioncard">
-				<img src="./assets/bookmark_check.svg" class="bookmark" />
-				<h2 class="question">
-					What is the correct way to write a comment in CSS?
-				</h2>
-				<button>Show Answer</button>
-				<p class="answer">
-					The correct way to write a comment in CSS is /* comment */.
-				</p>
-				<ul class="taglist">
-					<li class="tag">#html</li>
-					<li class="tag">#css</li>
-					<li class="tag">#tag</li>
-				</ul>
+			<section class="questionViewPort">
+				<section class="questioncard">
+					<img src="./assets/bookmark_check.svg" class="bookmark" />
+					<h2 class="questioncard__header">
+						What is the correct way to write a comment in CSS?
+					</h2>
+					<button
+						class="button button--showAnswer"
+						type="button"
+						data-js="answerButton">
+						Show Answer
+					</button>
+					<p class="answer answer--hidden" data-js="answerBlock">
+						The correct way to write a comment in CSS is /* comment */.
+					</p>
+					<ul class="taglist">
+						<li class="tag">#html</li>
+						<li class="tag">#css</li>
+						<li class="tag">#tag</li>
+					</ul>
+				</section>
 			</section>
-			<section class="questioncard">
-				<img src="./assets/bookmark_check.svg" class="bookmark" />
-				<h2 class="question">
-					Which attribute do you need to use to insert an image in HTML?
-				</h2>
-				<button>Show Answer</button>
-				<p class="answer">
-					You need to use the src attribute to insert an image in HTML.
-				</p>
-				<ul class="taglist">
-					<li class="tag">#html</li>
-					<li class="tag">#css</li>
-					<li class="tag">#somanytags</li>
-				</ul>
+			<section class="questionViewPort">
+				<section class="questioncard">
+					<img src="./assets/bookmark_check.svg" class="bookmark" />
+					<h2 class="questioncard__header">
+						Which attribute do you need to use to insert an image in HTML?
+					</h2>
+					<button
+						class="button button--showAnswer"
+						type="button"
+						data-js="answerButton">
+						Show Answer
+					</button>
+					<p class="answer answer--hidden" data-js="answerBlock">
+						You need to use the src attribute to insert an image in HTML.
+					</p>
+					<ul class="taglist">
+						<li class="tag">#html</li>
+						<li class="tag">#css</li>
+						<li class="tag">#somanytags</li>
+					</ul>
+				</section>
 			</section>
-			<section class="questioncard">
-				<img src="./assets/bookmark_check.svg" class="bookmark" />
-				<h2 class="question">
-					How can you create a hyperlink in HTML that refers to another webpage?
-				</h2>
-				<button>Show Answer</button>
-				<p class="answer">
-					You can create a hyperlink in HTML that refers to another webpage by
-					using the &lt;a&gt; tag and the href attribute.
-				</p>
-				<ul class="taglist">
-					<li class="tag">#html</li>
-					<li class="tag">#css</li>
-					<li class="tag">#flexbox</li>
-				</ul>
+			<section class="questionViewPort">
+				<section class="questioncard">
+					<img src="./assets/bookmark_check.svg" class="bookmark" />
+					<h2 class="questioncard__header">
+						How can you create a hyperlink in HTML that refers to another
+						webpage?
+					</h2>
+					<button
+						class="button button--showAnswer"
+						type="button"
+						data-js="answerButton">
+						Show Answer
+					</button>
+					<p class="answer answer--hidden" data-js="answerBlock">
+						You can create a hyperlink in HTML that refers to another webpage by
+						using the &lt;a&gt; tag and the href attribute.
+					</p>
+					<ul class="taglist">
+						<li class="tag">#html</li>
+						<li class="tag">#css</li>
+						<li class="tag">#flexbox</li>
+					</ul>
+				</section>
 			</section>
 		</main>
 		<footer>
 			<ul class="navigation">
-				<li class="navigation-item">
+				<li class="navigation__item">
 					<a href="index.html"
-						><img src="./assets/questions.svg" class="navigation-icon"
+						><img src="./assets/questions.svg" class="navigation__icon"
 					/></a>
 				</li>
-				<li class="navigation-item navActive">
+				<li class="navigation__item navigation__item--current">
 					<a href="bookmarks.html"
-						><img src="./assets/bookmarks.svg" class="navigation-icon"
+						><img src="./assets/bookmarks.svg" class="navigation__icon"
 					/></a>
 				</li>
-				<li class="navigation-item">
+				<li class="navigation__item">
 					<a href="userprofile.html"
-						><img src="./assets/userprofile.svg" class="navigation-icon"
+						><img src="./assets/userprofile.svg" class="navigation__icon"
 					/></a>
 				</li>
 			</ul>

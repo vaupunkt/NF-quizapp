@@ -1,0 +1,19 @@
+.taglist {
+	padding-top: 10px;
+	list-style: none;
+	display: flex;
+	gap: 5px;
+	flex-wrap: wrap;
+}
+
+.tag {
+	background-color: var(--tag-background-color);
+	border-radius: 5px;
+	padding: 5px;
+	color: var(--light-font-color);
+	font-size: 0.8rem;
+}
+
+.tag:hover {
+	color: var(--less-light-font-color);
+}
