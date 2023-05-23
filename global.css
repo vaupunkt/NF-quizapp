@@ -15,7 +15,7 @@
 	--border-variable: 3px solid var(--light-primary-color);
 }
 
-/* @media (prefers-color-scheme: dark) { 
+@media (prefers-color-scheme: dark) { 
 	:root {
 		--light-primary-color: #3700b3;
 		--light-secondary-color: #000000;
@@ -25,7 +25,7 @@
 		--light-font-color: #ffffff;
 		--border-variable: 3px solid var(--light-primary-color);
 	}
-} */
+}
 * {
 	box-sizing: border-box;
 	padding: 0;
