@@ -1,20 +1,20 @@
 .button {
 	font-size: 1rem;
 	border-radius: 30px;
-	border: 3px solid #312509;
+	border: var(--border-variable);
 	font-weight: bold;
 	padding: 15px;
 	margin: 15px auto 15px auto;
 }
 
 .button--showAnswer {
-	background-color: #a3bbad;
-	color: #312509;
+	background-color: var(--light-secondary-color);
+	color: var(--light-font-color);
 }
 
 .button--showAnswer:hover {
-	background-color: #0e3b43;
-	color: white;
+	background-color: var(--light-medium-color);
+	color: var(--light-font-color);
 }
 
 .button--showAnswer:active {

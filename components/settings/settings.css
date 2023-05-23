@@ -1,8 +1,10 @@
 .settings {
+	color: var(--light-accent-color);
 	margin: auto;
 	text-align: center;
 	width: 100%;
 	max-width: 200px;
+	margin-bottom: 100px;
 }
 
 .settings__singleSetting {
