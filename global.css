@@ -20,7 +20,7 @@
 	:root {
 		--light-primary-color: #3700b3;
 		--light-secondary-color: #000000;
-		--light-medium-color: #ffffff;
+		--light-medium-color: #484848;
 		--light-accent-color: #ffffff;
 		--light-white: #202020;
 		--light-font-color: #ffffff;
@@ -42,7 +42,7 @@ body {
 
 body,
 html {
-	scroll-snap-type: y proximity;
+	scroll-snap-type: y mandatory;
 }
 
 header {

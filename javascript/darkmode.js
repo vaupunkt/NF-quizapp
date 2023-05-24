@@ -47,7 +47,7 @@ function setDarkmode() {
 		"--light-secondary-color",
 		"#000000"
 	);
-	document.documentElement.style.setProperty("--light-medium-color", "#ffffff");
+	document.documentElement.style.setProperty("--light-medium-color", "#484848");
 	document.documentElement.style.setProperty("--light-accent-color", "#ffffff");
 	document.documentElement.style.setProperty("--light-white", "#202020");
 	document.documentElement.style.setProperty("--light-font-color", "#ffffff");
