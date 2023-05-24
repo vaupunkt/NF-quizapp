@@ -3,6 +3,7 @@
 @import "./components/userprofile/userprofile.css";
 @import "./components/questioncard/questioncard.css";
 @import "./components/questioncard/tag.css";
+@import "./components/bookmark/bookmark-icon.css";
 @import "./components/button/button.css";
 
 :root {
@@ -15,7 +16,7 @@
 	--border-variable: 3px solid var(--light-primary-color);
 }
 
-@media (prefers-color-scheme: dark) { 
+@media (prefers-color-scheme: dark) {
 	:root {
 		--light-primary-color: #3700b3;
 		--light-secondary-color: #000000;
