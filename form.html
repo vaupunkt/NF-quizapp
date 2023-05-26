@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./global.css" />
 		<script type="text/javascript" src="/javascript/script.js" defer></script>
-		<script type="text/javascript" src="/javascript/darkmode.js" defer></script>
+		<script type="text/javascript" src="/javascript/form.js" defer></script>
+
 
 		<!-- Icons from Linea Iconset. This is a free iconset designed by Dario Ferrando.
         The set is distributed under CCBY license.
@@ -17,9 +18,32 @@
 	</head>
 	<body>
 		<header>
-			<h1>Quiz App</h1>
+			<h1 aria-label="pageTitle">Add Questions</h1>
 		</header>
-
+		<main data-js="main">
+			<form class="questionForm" data-js="questionForm" aria-describedby="#formDescription" aria-labelledby="pageTitle">
+				<p class="questionForm__description" id="formDescription">Feel free to add your own questions to the Quiz App.</p>
+					<label class="questionForm__label" for="questioninput">Your Question</label>
+					<textarea  data-js="questionFormTextarea" class="questionForm__input questionForm__input--textarea"
+						id="questioninput"
+						name="question"
+						required
+						maxlength="150"></textarea>
+					<p class="questionForm__subtitle" data-js="lettercounter">150 Characters left</p>
+					<label class="questionForm__label" for="answerinput">Your Answer</label>
+					<textarea data-js="questionFormTextarea" class="questionForm__input questionForm__input--textarea"
+						id="answerinput"
+						name="answer"
+						required
+						maxlength="150"></textarea>
+					<p class="questionForm__subtitle" data-js="lettercounter">150 Characters left</p>
+					<label class="questionForm__label" for="taginput">Tags</label>
+					<input class="questionForm__input questionForm__input--input" type="text" id="taginput" name="tags" />
+					<p class="questionForm__subtitle" data-js="lettercounter">Please seperate tags with comma</p>
+				</fieldset>
+				<button class="button button--submitQuestion" type="submit">Submit</button>
+			</form>
+		</main>
 		<footer>
 			<ul class="navigation">
 				<li class="navigation__item">

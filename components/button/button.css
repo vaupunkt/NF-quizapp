@@ -20,3 +20,17 @@
 .button--showAnswer:active {
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
+.button--submitQuestion {
+	background-color: var(--light-secondary-color);
+	color: var(--light-font-color);
+}
+
+.button--submitQuestion:hover {
+	background-color: var(--light-medium-color);
+	color: var(--light-font-color);
+}
+
+.button--submitQuestion:active {
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
