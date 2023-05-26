@@ -67,6 +67,6 @@ h1 {
 main {
 	display: flex;
 	flex-direction: column;
-	padding: 50px;
+	padding: 70px 20px 100px 20px;
 	min-width: 300px;
 }

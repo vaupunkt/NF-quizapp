@@ -19,7 +19,7 @@
 			<h1>Quiz App</h1>
 		</header>
 		<main>
-			<section class="questionViewPort">
+			<section class="question-viewport">
 				<section class="questioncard">
 					<img
 						src="./assets/bookmark.svg"
@@ -29,7 +29,7 @@
 						What is the correct way to write a comment in CSS?
 					</h2>
 					<button
-						class="button button--showAnswer"
+						class="button button--show-answer"
 						type="button"
 						data-js="answerButton">
 						Show Answer
@@ -44,7 +44,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="questionViewPort">
+			<section class="question-viewport">
 				<section class="questioncard">
 					<img
 						src="./assets/bookmark.svg"
@@ -55,7 +55,7 @@
 						in CSS?
 					</h2>
 					<button
-						class="button button--showAnswer"
+						class="button button--show-answer"
 						type="button"
 						data-js="answerButton">
 						Show Answer
@@ -71,7 +71,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="questionViewPort">
+			<section class="question-viewport">
 				<section class="questioncard">
 					<img
 						src="./assets/bookmark.svg"
@@ -81,7 +81,7 @@
 						How can you include an external CSS file in an HTML page?
 					</h2>
 					<button
-						class="button button--showAnswer"
+						class="button button--show-answer"
 						type="button"
 						data-js="answerButton">
 						Show Answer
@@ -96,7 +96,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="questionViewPort">
+			<section class="question-viewport">
 				<section class="questioncard">
 					<img
 						src="./assets/bookmark.svg"
@@ -106,7 +106,7 @@
 						Which attribute do you need to use to insert an image in HTML?
 					</h2>
 					<button
-						class="button button--showAnswer"
+						class="button button--show-answer"
 						type="button"
 						data-js="answerButton">
 						Show Answer
@@ -121,7 +121,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="questionViewPort">
+			<section class="question-viewport">
 				<section class="questioncard">
 					<img
 						src="./assets/bookmark.svg"
@@ -132,7 +132,7 @@
 						webpage?
 					</h2>
 					<button
-						class="button button--showAnswer"
+						class="button button--show-answer"
 						type="button"
 						data-js="answerButton">
 						Show Answer
@@ -151,26 +151,44 @@
 		</main>
 		<footer>
 			<ul class="navigation">
-				<li class="navigation__item navigation__item--current">
-					<a href="index.html"
-						><img src="./assets/questions.svg" class="navigation__icon"
+				<li
+					class="navigation__item navigation__item--current"
+					aria-label="Navigate to Questions-Page">
+					<a href="/"
+						><img
+							src="./assets/questions.svg"
+							class="navigation__icon"
+							alt="Questionmark-Icon"
 					/></a>
 				</li>
-				<li class="navigation__item">
-					<a href="bookmarks.html"
+				<li
+					class="navigation__item"
+					aria-label="Navigate to bookmarks-page with saved questions">
+					<a href="./bookmarks.html"
 						><img
 							src="./assets/bookmark.svg"
 							class="navigation__icon bookmark--navigation"
+							alt="Bookmarks-Icon"
 					/></a>
 				</li>
-				<li class="navigation__item">
-					<a href="form.html"
-						><img src="./assets/form.svg" class="navigation__icon"
+				<li
+					class="navigation__item"
+					aria-label="Navigate to page for adding your own questions">
+					<a href="./form.html"
+						><img
+							src="./assets/form.svg"
+							class="navigation__icon"
+							alt="Plus-Icon"
 					/></a>
 				</li>
-				<li class="navigation__item">
-					<a href="userprofile.html"
-						><img src="./assets/userprofile.svg" class="navigation__icon"
+				<li
+					class="navigation__item"
+					aria-label="Navigate to Userprofile and Settings">
+					<a href="./userprofile.html"
+						><img
+							src="./assets/userprofile.svg"
+							class="navigation__icon"
+							alt="User-Icon showing silhouette of a person"
 					/></a>
 				</li>
 			</ul>

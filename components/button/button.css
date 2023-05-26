@@ -7,30 +7,30 @@
 	margin: 15px auto 15px auto;
 }
 
-.button--showAnswer {
+.button--show-answer {
 	background-color: var(--light-secondary-color);
 	color: var(--light-font-color);
 }
 
-.button--showAnswer:hover {
+.button--show-answer:hover {
 	background-color: var(--light-medium-color);
 	color: var(--light-font-color);
 }
 
-.button--showAnswer:active {
+.button--show-answer:active {
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.button--submitQuestion {
+.button--submit-question {
 	background-color: var(--light-secondary-color);
 	color: var(--light-font-color);
 }
 
-.button--submitQuestion:hover {
+.button--submit-question:hover {
 	background-color: var(--light-medium-color);
 	color: var(--light-font-color);
 }
 
-.button--submitQuestion:active {
+.button--submit-question:active {
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }

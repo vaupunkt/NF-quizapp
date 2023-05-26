@@ -5,7 +5,6 @@ form.addEventListener("submit", (event) => {
 	event.preventDefault();
 	const formData = new FormData(event.target);
 	const data = Object.fromEntries(formData);
-	console.log(data);
 
 	const questioncard = document.createElement("section");
 	const bookmark = document.createElement("img");
@@ -13,13 +12,13 @@ form.addEventListener("submit", (event) => {
 	const answer = document.createElement("p");
 	const tagList = document.createElement("ul");
 
-	questioncard.classList.add("questioncard", "questioncard--newCard");
+	questioncard.classList.add("questioncard", "questioncard--new-card");
 	bookmark.classList.add("bookmark");
 	questioncardHeader.classList.add("questioncard__header");
 	answer.classList.add("answer");
 	tagList.classList.add("taglist");
-    bookmark.setAttribute("src", "./assets/bookmark.svg");
-    bookmark.setAttribute("data-js", "bookmarkIcon")
+	bookmark.setAttribute("src", "./assets/bookmark.svg");
+	bookmark.setAttribute("data-js", "bookmarkIcon");
 
 	questioncardHeader.textContent = data.question;
 	answer.textContent = data.answer;

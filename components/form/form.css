@@ -1,4 +1,4 @@
-.questionForm {
+.form {
 	border: var(--border-variable);
 	border-radius: 20px;
 	display: flex;
@@ -11,28 +11,28 @@
 	position: relative;
 }
 
-.questionForm__description {
+.form__description {
 	padding: 10px;
 }
 
-.questionForm__label {
+.form__label {
 	padding: 5px;
 	font-weight: 600;
 	margin: auto;
 }
 
-.questionForm__subtitle {
+.form__subtitle {
 	font-size: 0.7em;
 	font-style: italic;
 	align-self: flex-end;
 }
 
-.questionForm__input {
+.form__input {
 	border-radius: 25px;
 	padding: 10px;
 	border-style: none;
 }
 
-.questionForm__input--textarea {
+.form__input--textarea {
 	height: 90px;
 }

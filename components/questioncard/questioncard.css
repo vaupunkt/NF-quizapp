@@ -4,7 +4,7 @@
 	font-size: 0.9rem;
 }
 
-.questionViewPort {
+.question-viewport {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -35,9 +35,9 @@
 	color: var(----light-primary-color);
 }
 
-.questioncard--newCard {
-		transform-origin: 50% 0;
-		animation: append-animate .3s linear;
+.questioncard--new-card {
+	transform-origin: 50% 0;
+	animation: append-animate 0.3s linear;
 }
 
 @keyframes append-animate {
