@@ -45,17 +45,16 @@ form.addEventListener("submit", (event) => {
 	form.question.focus();
 });
 
-const questionFormTextareas = document.querySelectorAll(
-	'[data-js="questionFormTextarea"]'
-);
+const formTextareas = document.querySelectorAll('[data-js="formTextarea"]');
 
-questionFormTextareas.forEach((textarea, index) => {
+formTextareas.forEach((textarea, index) => {
 	let counter = 150;
 	const lettercounter = document.querySelectorAll('[data-js="lettercounter"]');
 	textarea.addEventListener("input", () => {
-		if (counter > 0) {
-			counter--;
-			lettercounter[index].textContent = counter + " Characters left";
+		const typedLetters = textarea.value.length;
+		if (typedLetters <= 150) {
+			lettercounter[index].textContent =
+				150 - typedLetters + " Characters left";
 		}
 	});
 });
