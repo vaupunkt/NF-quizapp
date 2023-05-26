@@ -10,11 +10,11 @@
 
 .navigation__item {
 	flex-grow: 1;
-	background-color: #357266;
+	background-color: var(--light-secondary-color);
 }
 
 .navigation__item--current {
-	background-color: #0e3b43;
+	background-color: var(--light-primary-color);
 }
 
 .navigation__icon {

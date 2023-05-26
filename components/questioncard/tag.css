@@ -7,7 +7,7 @@
 }
 
 .tag {
-	background-color: var(--tag-background-color);
+	background-color: var(--light-secondary-color);
 	border-radius: 5px;
 	padding: 5px;
 	color: var(--light-font-color);
@@ -15,5 +15,6 @@
 }
 
 .tag:hover {
-	color: var(--less-light-font-color);
+	color: var(--light-middle-color);
+	background-color: var(--light-accent-color);
 }

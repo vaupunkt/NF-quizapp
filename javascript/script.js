@@ -11,3 +11,11 @@ showAnswerButton.forEach((answerButton, index) => {
 		}
 	});
 });
+
+const bookmarkIcons = document.querySelectorAll('[data-js="bookmarkIcon"]');
+
+bookmarkIcons.forEach((bookmarkIcon, index) => {
+	bookmarkIcon.addEventListener("click", () => {
+		bookmarkIcon.classList.toggle("bookmark--saved");
+	});
+});
