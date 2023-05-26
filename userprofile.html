@@ -5,8 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./global.css" />
-		<script type="text/javascript" src="/javascript/script.js" defer></script>
 		<script type="text/javascript" src="/javascript/darkmode.js" defer></script>
+
+		<script type="text/javascript" src="/javascript/script.js" defer></script>
 
 		<!-- Icons from Linea Iconset. This is a free iconset designed by Dario Ferrando.
         The set is distributed under CCBY license.
@@ -40,8 +41,8 @@
 			</section>
 			<section class="settings">
 				<h2>Settings</h2>
-				<section class="settings__singleSetting">
-					<p class="settings__singleSetting__label">Darkmode</p>
+				<section class="settings__single-setting">
+					<p class="settings__single-setting__label">Darkmode</p>
 					<label class="switch">
 						<input
 							type="checkbox"
@@ -54,21 +55,42 @@
 		</main>
 		<footer>
 			<ul class="navigation">
-				<li class="navigation__item">
-					<a href="index.html"
-						><img src="./assets/questions.svg" class="navigation__icon"
+				<li class="navigation__item" aria-label="Navigate to Questions-Page">
+					<a href="/"
+						><img
+							src="./assets/questions.svg"
+							class="navigation__icon"
+							alt="Questionmark-Icon"
 					/></a>
 				</li>
-				<li class="navigation__item">
-					<a href="bookmarks.html"
+				<li
+					class="navigation__item"
+					aria-label="Navigate to bookmarks-page with saved questions">
+					<a href="./bookmarks.html"
 						><img
 							src="./assets/bookmark.svg"
 							class="navigation__icon bookmark--navigation"
+							alt="Bookmarks-Icon"
 					/></a>
 				</li>
-				<li class="navigation__item navigation__item--current">
-					<a href="userprofile.html"
-						><img src="./assets/userprofile.svg" class="navigation__icon"
+				<li
+					class="navigation__item"
+					aria-label="Navigate to page for adding your own questions">
+					<a href="./form.html"
+						><img
+							src="./assets/form.svg"
+							class="navigation__icon"
+							alt="Plus-Icon"
+					/></a>
+				</li>
+				<li
+					class="navigation__item navigation__item--current"
+					aria-label="Navigate to Userprofile and Settings">
+					<a href="./userprofile.html"
+						><img
+							src="./assets/userprofile.svg"
+							class="navigation__icon"
+							alt="User-Icon showing silhouette of a person"
 					/></a>
 				</li>
 			</ul>

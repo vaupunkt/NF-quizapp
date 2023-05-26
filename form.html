@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./global.css" />
+		<script type="text/javascript" src="/javascript/script.js" defer></script>
+		<script type="text/javascript" src="/javascript/form.js" defer></script>
+
+
+		<!-- Icons from Linea Iconset. This is a free iconset designed by Dario Ferrando.
+        The set is distributed under CCBY license.
+        CCBY LICENSE
+        http://creativecommons.org/licenses/by/4.0/-->
+
+		<title>Quiz App</title>
+	</head>
+	<body>
+		<header>
+			<h1>Add Questions</h1>
+		</header>
+		<main data-js="main">
+			<form class="form" data-js="questionForm" aria-describedby="#formDescription" aria-labelledby="pageTitle">
+				<p class="form__description" id="formDescription">Feel free to add your own questions to the Quiz App.</p>
+					<label class="form__label" for="questioninput">Your Question</label>
+					<textarea  data-js="questionFormTextarea" class="form__input form__input--textarea"
+						id="questioninput"
+						name="question"
+						required
+						maxlength="150"></textarea>
+					<p class="form__subtitle" data-js="lettercounter">150 Characters left</p>
+					<label class="form__label" for="answerinput">Your Answer</label>
+					<textarea data-js="questionFormTextarea" class="form__input form__input--textarea"
+						id="answerinput"
+						name="answer"
+						required
+						maxlength="150"></textarea>
+					<p class="form__subtitle" data-js="lettercounter">150 Characters left</p>
+					<label class="form__label" for="taginput">Tags</label>
+					<input class="form__input form__input--input" type="text" id="taginput" name="tags" />
+					<p class="form__subtitle" data-js="lettercounter">Please separate tags with comma</p>
+				</fieldset>
+				<button class="button button--submitQuestion" type="submit">Submit</button>
+			</form>
+		</main>
+		<footer>
+			<ul class="navigation">
+				<li class="navigation__item" aria-label="Navigate to Questions-Page">
+					<a href="/"
+						><img src="./assets/questions.svg" class="navigation__icon" alt="Questionmark-Icon"
+					/></a>
+				</li>
+				<li class="navigation__item" aria-label="Navigate to bookmarks-page with saved questions">
+					<a href="./bookmarks.html"
+						><img
+							src="./assets/bookmark.svg"
+							class="navigation__icon bookmark--navigation" alt="Bookmarks-Icon"
+					/></a>
+				</li>
+				<li class="navigation__item navigation__item--current" aria-label="Navigate to page for adding your own questions">
+					<a href="./form.html"
+						><img src="./assets/form.svg" class="navigation__icon" alt="Plus-Icon"
+					/></a>
+				</li>
+				<li class="navigation__item" aria-label="Navigate to Userprofile and Settings">
+					<a href="./userprofile.html"
+						><img src="./assets/userprofile.svg" class="navigation__icon" alt="User-Icon showing silhouette of a person"
+					/></a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
