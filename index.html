@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./global.css" />
-		<script type="text/javascript" src="/javascript/script.js" defer></script>
+		<script src="./script.js" type="module" defer></script>
 
 		<!-- Icons from Linea Iconset. This is a free iconset designed by Dario Ferrando.
         The set is distributed under CCBY license.
@@ -19,128 +19,287 @@
 			<h1>Quiz App</h1>
 		</header>
 		<main>
-			<section class="question-viewport">
-				<section class="questioncard">
-					<button class="button--bookmark bookmark" data-js="bookmarkIcon">
-						<img src="./assets/bookmark.svg" />
-					</button>
-					<h2 class="questioncard__header">
-						What is the correct way to write a comment in CSS?
-					</h2>
-					<button
-						class="button button--show-answer"
-						type="button"
-						data-js="answerButton">
-						Show Answer
-					</button>
-					<p class="answer answer--hidden" data-js="answerBlock">
-						The correct way to write a comment in CSS is /* comment */.
-					</p>
-					<ul class="taglist">
-						<li class="tag">#html</li>
-						<li class="tag">#css</li>
-						<li class="tag">#tag</li>
-					</ul>
+			<section class="questionSection" data-js="questionSection">
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button class="button--bookmark bookmark" data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							What is the correct way to write a comment in CSS?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							The correct way to write a comment in CSS is /* comment */.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+							<li class="tag">#tag</li>
+						</ul>
+					</section>
+				</section>
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button class="button--bookmark bookmark" data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							What is the difference between an id selector and a class selector
+							in CSS?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							An id selector is unique, while a class selector can be used
+							multiple times.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+							<li class="tag">#anotherTag</li>
+						</ul>
+					</section>
+				</section>
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button class="button--bookmark bookmark" data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							How can you include an external CSS file in an HTML page?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							You can include an external CSS file in an HTML page by using the
+							&lt;link&gt; tag in the &lt;head&gt; section.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+						</ul>
+					</section>
+				</section>
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button class="button--bookmark bookmark" data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							Which attribute do you need to use to insert an image in HTML?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							You need to use the src attribute to insert an image in HTML.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+							<li class="tag">#somanytags</li>
+						</ul>
+					</section>
+				</section>
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button class="button--bookmark bookmark" data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							How can you create a hyperlink in HTML that refers to another
+							webpage?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							You can create a hyperlink in HTML that refers to another webpage
+							by using the &lt;a&gt; tag and the href attribute.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+							<li class="tag">#flexbox</li>
+						</ul>
+					</section>
 				</section>
 			</section>
-			<section class="question-viewport">
-				<section class="questioncard">
-					<button class="button--bookmark bookmark" data-js="bookmarkIcon">
-						<img src="./assets/bookmark.svg" />
-					</button>
-					<h2 class="questioncard__header">
-						What is the difference between an id selector and a class selector
-						in CSS?
-					</h2>
-					<button
-						class="button button--show-answer"
-						type="button"
-						data-js="answerButton">
-						Show Answer
-					</button>
-					<p class="answer answer--hidden" data-js="answerBlock">
-						An id selector is unique, while a class selector can be used
-						multiple times.
-					</p>
-					<ul class="taglist">
-						<li class="tag">#html</li>
-						<li class="tag">#css</li>
-						<li class="tag">#anotherTag</li>
-					</ul>
+			<section class="bookmarkSection" data-js="bookmarkSection">
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button
+							class="button--bookmark bookmark bookmark--saved"
+							data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							What is the correct way to write a comment in CSS?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							The correct way to write a comment in CSS is /* comment */.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+							<li class="tag">#tag</li>
+						</ul>
+					</section>
+				</section>
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button
+							class="button--bookmark bookmark bookmark--saved"
+							data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							Which attribute do you need to use to insert an image in HTML?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							You need to use the src attribute to insert an image in HTML.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+							<li class="tag">#somanytags</li>
+						</ul>
+					</section>
+				</section>
+				<section class="question-viewport">
+					<section class="questioncard">
+						<button
+							class="button--bookmark bookmark bookmark--saved"
+							data-js="bookmarkIcon">
+							<img src="./assets/bookmark.svg" />
+						</button>
+						<h2 class="questioncard__header">
+							How can you create a hyperlink in HTML that refers to another
+							webpage?
+						</h2>
+						<button
+							class="button button--show-answer"
+							type="button"
+							data-js="answerButton">
+							Show Answer
+						</button>
+						<p class="answer answer--hidden" data-js="answerBlock">
+							You can create a hyperlink in HTML that refers to another webpage
+							by using the &lt;a&gt; tag and the href attribute.
+						</p>
+						<ul class="taglist">
+							<li class="tag">#html</li>
+							<li class="tag">#css</li>
+							<li class="tag">#flexbox</li>
+						</ul>
+					</section>
 				</section>
 			</section>
-			<section class="question-viewport">
-				<section class="questioncard">
-					<button class="button--bookmark bookmark" data-js="bookmarkIcon">
-						<img src="./assets/bookmark.svg" />
-					</button>
-					<h2 class="questioncard__header">
-						How can you include an external CSS file in an HTML page?
-					</h2>
-					<button
-						class="button button--show-answer"
-						type="button"
-						data-js="answerButton">
-						Show Answer
-					</button>
-					<p class="answer answer--hidden" data-js="answerBlock">
-						You can include an external CSS file in an HTML page by using the
-						&lt;link&gt; tag in the &lt;head&gt; section.
+			<section class="formSection" data-js="formSection">
+				<form
+					class="form"
+					data-js="questionForm"
+					aria-describedby="#formDescription"
+					aria-labelledby="pageTitle">
+					<p class="form__description" id="formDescription">
+						Feel free to add your own questions to the Quiz App.
 					</p>
-					<ul class="taglist">
-						<li class="tag">#html</li>
-						<li class="tag">#css</li>
-					</ul>
-				</section>
+					<label class="form__label" for="questioninput">Your Question</label>
+					<textarea
+						data-js="formTextarea"
+						class="form__input form__input--textarea"
+						id="questioninput"
+						name="question"
+						required
+						maxlength="150"></textarea>
+					<p class="form__subtitle" data-js="lettercounter">
+						150 Characters left
+					</p>
+					<label class="form__label" for="answerinput">Your Answer</label>
+					<textarea
+						data-js="formTextarea"
+						class="form__input form__input--textarea"
+						id="answerinput"
+						name="answer"
+						required
+						maxlength="150"></textarea>
+					<p class="form__subtitle" data-js="lettercounter">
+						150 Characters left
+					</p>
+					<label class="form__label" for="taginput">Tags</label>
+					<input
+						class="form__input form__input--input"
+						type="text"
+						id="taginput"
+						name="tags" />
+					<p class="form__subtitle" data-js="lettercounter">
+						Please separate tags with comma
+					</p>
+					<button class="button button--submitQuestion" type="submit">
+						Submit
+					</button>
+				</form>
 			</section>
-			<section class="question-viewport">
-				<section class="questioncard">
-					<button class="button--bookmark bookmark" data-js="bookmarkIcon">
-						<img src="./assets/bookmark.svg" />
-					</button>
-					<h2 class="questioncard__header">
-						Which attribute do you need to use to insert an image in HTML?
-					</h2>
-					<button
-						class="button button--show-answer"
-						type="button"
-						data-js="answerButton">
-						Show Answer
-					</button>
-					<p class="answer answer--hidden" data-js="answerBlock">
-						You need to use the src attribute to insert an image in HTML.
-					</p>
-					<ul class="taglist">
-						<li class="tag">#html</li>
-						<li class="tag">#css</li>
-						<li class="tag">#somanytags</li>
-					</ul>
+			<section class="profileSection" data-js="profileSection">
+				<section class="profile">
+					<img src="./assets/profilepicture.jpeg" class="profile__picture" />
+					<article class="userinformation">
+						<h2>Name LastName</h2>
+						<p class="userinformation__userdescription">
+							Text about the user will go here. Very interesting. So much to
+							read, I don't know where to stop
+						</p>
+						<section class="counter">
+							<section class="counter__label">
+								<object class="counter__label__number">50</object> Questions
+							</section>
+							<section class="counter__label">
+								<object class="counter__label__number">10</object> Bookmarks
+							</section>
+						</section>
+					</article>
 				</section>
-			</section>
-			<section class="question-viewport">
-				<section class="questioncard">
-					<button class="button--bookmark bookmark" data-js="bookmarkIcon">
-						<img src="./assets/bookmark.svg" />
-					</button>
-					<h2 class="questioncard__header">
-						How can you create a hyperlink in HTML that refers to another
-						webpage?
-					</h2>
-					<button
-						class="button button--show-answer"
-						type="button"
-						data-js="answerButton">
-						Show Answer
-					</button>
-					<p class="answer answer--hidden" data-js="answerBlock">
-						You can create a hyperlink in HTML that refers to another webpage by
-						using the &lt;a&gt; tag and the href attribute.
-					</p>
-					<ul class="taglist">
-						<li class="tag">#html</li>
-						<li class="tag">#css</li>
-						<li class="tag">#flexbox</li>
-					</ul>
+				<section class="settings">
+					<h2>Settings</h2>
+					<section class="settings__single-setting">
+						<p class="settings__single-setting__label">Darkmode</p>
+						<label class="switch">
+							<input type="checkbox" data-js="darkmode-button" />
+							<span class="slider round"></span>
+						</label>
+					</section>
 				</section>
 			</section>
 		</main>
@@ -148,43 +307,39 @@
 			<ul class="navigation">
 				<li
 					class="navigation__item navigation__item--current"
-					aria-label="Navigate to Questions-Page">
-					<a href="/"
-						><img
-							src="./assets/questions.svg"
-							class="navigation__icon"
-							alt="Questionmark-Icon"
-					/></a>
+					aria-label="Navigate to Questions-Page"
+					data-js="questionSectionNavigation">
+					<img
+						src="./assets/questions.svg"
+						class="navigation__icon"
+						alt="Questionmark-Icon" />
 				</li>
 				<li
 					class="navigation__item"
-					aria-label="Navigate to bookmarks-page with saved questions">
-					<a href="./bookmarks.html"
-						><img
-							src="./assets/bookmark.svg"
-							class="navigation__icon bookmark--navigation"
-							alt="Bookmarks-Icon"
-					/></a>
+					aria-label="Navigate to bookmarks-page with saved questions"
+					data-js="bookmarkSectionNavigation">
+					<img
+						src="./assets/bookmark.svg"
+						class="navigation__icon bookmark--navigation"
+						alt="Bookmarks-Icon" />
 				</li>
 				<li
 					class="navigation__item"
-					aria-label="Navigate to page for adding your own questions">
-					<a href="./form.html"
-						><img
-							src="./assets/form.svg"
-							class="navigation__icon"
-							alt="Plus-Icon"
-					/></a>
+					aria-label="Navigate to page for adding your own questions"
+					data-js="formSectionNavigation">
+					<img
+						src="./assets/form.svg"
+						class="navigation__icon"
+						alt="Plus-Icon" />
 				</li>
 				<li
 					class="navigation__item"
-					aria-label="Navigate to Userprofile and Settings">
-					<a href="./userprofile.html"
-						><img
-							src="./assets/userprofile.svg"
-							class="navigation__icon"
-							alt="User-Icon showing silhouette of a person"
-					/></a>
+					aria-label="Navigate to Userprofile and Settings"
+					data-js="profileSectionNavigation">
+					<img
+						src="./assets/userprofile.svg"
+						class="navigation__icon"
+						alt="User-Icon showing silhouette of a person" />
 				</li>
 			</ul>
 		</footer>
