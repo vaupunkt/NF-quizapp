@@ -147,7 +147,8 @@
 			</section>
 			<section
 				class="main__section--hidden main__Section"
-				data-js="bookmarkSection">
+				data-js="bookmarkSection"
+				id="bookmark">
 				<section class="question-viewport">
 					<section class="questioncard">
 						<button
@@ -231,7 +232,8 @@
 			</section>
 			<section
 				class="main__section--hidden main__Section"
-				data-js="formSection">
+				data-js="formSection"
+				id="form">
 				<form
 					class="form"
 					data-js="questionForm"
@@ -278,7 +280,8 @@
 			</section>
 			<section
 				class="main__section--hidden main__Section"
-				data-js="profileSection">
+				data-js="profileSection"
+				id="profile">
 				<section class="profile">
 					<img src="./assets/profilepicture.jpeg" class="profile__picture" />
 					<article class="userinformation">
@@ -315,37 +318,45 @@
 					class="navigation__item navigation__item--current"
 					aria-label="Navigate to Questions-Page"
 					data-js="questionSectionNavigation">
-					<img
-						src="./assets/questions.svg"
-						class="navigation__icon"
-						alt="Questionmark-Icon" />
+					<a href="/">
+						<img
+							src="./assets/questions.svg"
+							class="navigation__icon"
+							alt="Questionmark-Icon" />
+					</a>
 				</li>
 				<li
 					class="navigation__item"
 					aria-label="Navigate to bookmarks-page with saved questions"
 					data-js="bookmarkSectionNavigation">
-					<img
-						src="./assets/bookmark.svg"
-						class="navigation__icon bookmark--navigation"
-						alt="Bookmarks-Icon" />
+					<a href="#bookmark">
+						<img
+							src="./assets/bookmark.svg"
+							class="navigation__icon bookmark--navigation"
+							alt="Bookmarks-Icon" />
+					</a>
 				</li>
 				<li
 					class="navigation__item"
 					aria-label="Navigate to page for adding your own questions"
 					data-js="formSectionNavigation">
-					<img
-						src="./assets/form.svg"
-						class="navigation__icon"
-						alt="Plus-Icon" />
+					<a href="#form">
+						<img
+							src="./assets/form.svg"
+							class="navigation__icon"
+							alt="Plus-Icon" />
+					</a>
 				</li>
 				<li
 					class="navigation__item"
 					aria-label="Navigate to Userprofile and Settings"
 					data-js="profileSectionNavigation">
-					<img
-						src="./assets/userprofile.svg"
-						class="navigation__icon"
-						alt="User-Icon showing silhouette of a person" />
+					<a href="#profile">
+						<img
+							src="./assets/userprofile.svg"
+							class="navigation__icon"
+							alt="User-Icon showing silhouette of a person" />
+					</a>
 				</li>
 			</ul>
 		</footer>
