@@ -1,7 +1,13 @@
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
-let currentTheme = localStorage.getItem("theme");
-const darkmodeSwitch = document.querySelector('[data-js="darkmode-button"]');
+export const prefersDarkScheme = window.matchMedia(
+	"(prefers-color-scheme: dark)"
+);
+export const prefersLightScheme = window.matchMedia(
+	"(prefers-color-scheme: light)"
+);
+export let currentTheme = localStorage.getItem("theme");
+export const darkmodeSwitch = document.querySelector(
+	'[data-js="darkmode-button"]'
+);
 
 if (currentTheme == "dark" || prefersDarkScheme.matches) {
 	setDarkmode();
@@ -11,7 +17,7 @@ if (currentTheme == "dark" || prefersDarkScheme.matches) {
 	darkmodeSwitch.checked = false;
 }
 
-function darkmode() {
+export function darkmode() {
 	if (currentTheme == "dark" || prefersDarkScheme.matches) {
 		setLightmode();
 		localStorage.setItem("theme", "light");
@@ -23,7 +29,7 @@ function darkmode() {
 	}
 }
 
-function setLightmode() {
+export function setLightmode() {
 	document.documentElement.style.setProperty(
 		"--light-primary-color",
 		"#c68965"
@@ -38,7 +44,7 @@ function setLightmode() {
 	document.documentElement.style.setProperty("--light-font-color", "#eff3ee");
 }
 
-function setDarkmode() {
+export function setDarkmode() {
 	document.documentElement.style.setProperty(
 		"--light-primary-color",
 		"#3700b3"
