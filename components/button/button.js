@@ -13,3 +13,13 @@ export function showAnswerToggle(answerButton, index) {
 		}
 	});
 }
+
+export function showAnswerToggleAfterFetch() {
+	console.log("click");
+	this.classList.toggle("answer--hidden");
+	if (answerButton.textContent === "Hide Answer") {
+		answerButton.textContent = "Show Answer";
+	} else {
+		answerButton.textContent = "Hide Answer";
+	}
+}
