@@ -17,49 +17,53 @@ export const profileNavItem = document.querySelector(
 );
 
 export function questionSectionSelect() {
-	questionSection.style.display = "block";
-	bookmarkSection.style.display = "none";
-	formSection.style.display = "none";
-	profileSection.style.display = "none";
+	questionSection.classList.remove("main__section--hidden");
+	bookmarkSection.classList.add("main__section--hidden");
+	formSection.classList.add("main__section--hidden");
+	profileSection.classList.add("main__section--hidden");
 
 	questionNavItem.classList.add("navigation__item--current");
 	bookmarkNavItem.classList.remove("navigation__item--current");
 	formNavItem.classList.remove("navigation__item--current");
 	profileNavItem.classList.remove("navigation__item--current");
+	document.documentElement.scrollTop = 0;
 }
 
 export function bookmarkSectionSelect() {
-	questionSection.style.display = "none";
-	bookmarkSection.style.display = "block";
-	formSection.style.display = "none";
-	profileSection.style.display = "none";
+	questionSection.classList.add("main__section--hidden");
+	bookmarkSection.classList.remove("main__section--hidden");
+	formSection.classList.add("main__section--hidden");
+	profileSection.classList.add("main__section--hidden");
 
 	questionNavItem.classList.remove("navigation__item--current");
 	bookmarkNavItem.classList.add("navigation__item--current");
 	formNavItem.classList.remove("navigation__item--current");
 	profileNavItem.classList.remove("navigation__item--current");
+	document.documentElement.scrollTop = 0;
 }
 
 export function formSectionSelect() {
-	questionSection.style.display = "none";
-	bookmarkSection.style.display = "none";
-	formSection.style.display = "block";
-	profileSection.style.display = "none";
+	questionSection.classList.add("main__section--hidden");
+	bookmarkSection.classList.add("main__section--hidden");
+	formSection.classList.remove("main__section--hidden");
+	profileSection.classList.add("main__section--hidden");
 
 	questionNavItem.classList.remove("navigation__item--current");
 	bookmarkNavItem.classList.remove("navigation__item--current");
 	formNavItem.classList.add("navigation__item--current");
 	profileNavItem.classList.remove("navigation__item--current");
+	document.documentElement.scrollTop = 0;
 }
 
 export function profileSectionSelect() {
-	questionSection.style.display = "none";
-	bookmarkSection.style.display = "none";
-	formSection.style.display = "none";
-	profileSection.style.display = "block";
+	questionSection.classList.add("main__section--hidden");
+	bookmarkSection.classList.add("main__section--hidden");
+	formSection.classList.add("main__section--hidden");
+	profileSection.classList.remove("main__section--hidden");
 
 	questionNavItem.classList.remove("navigation__item--current");
 	bookmarkNavItem.classList.remove("navigation__item--current");
 	formNavItem.classList.remove("navigation__item--current");
 	profileNavItem.classList.add("navigation__item--current");
+	document.documentElement.scrollTop = 0;
 }
