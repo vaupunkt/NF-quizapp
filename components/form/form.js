@@ -1,5 +1,8 @@
+import { changeUserQuestionCounter } from "../userprofile/userprofile.js";
+
 const form = document.querySelector('[data-js="questionForm"]');
 const main = document.querySelector('[data-js="main"]');
+const userQuestionNumber = 0;
 
 form.addEventListener("submit", (event) => {
 	event.preventDefault();
@@ -40,7 +43,8 @@ form.addEventListener("submit", (event) => {
 		tag.textContent = tagArray[i];
 		tagList.append(tag);
 	}
-
+	userQuestionNumber++;
+	changeUserQuestionCounter(userQuestionNumber);
 	form.reset();
 	form.question.focus();
 });
