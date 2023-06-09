@@ -19,8 +19,6 @@ NF-QuizApp is a web application that allows you to test your knowledge on variou
 
 ## Create a question
 
-### (maybe coming soon as a feature)
-
 You can click on the create button to make your own question.
 On the create page, you will see a form where you can enter your question, answer and topic. After filling out the form, click on the submit button to save your question. 
 The Userquestions will appear under the form section.
