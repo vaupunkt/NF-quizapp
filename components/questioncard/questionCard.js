@@ -1,12 +1,11 @@
-import { bookmarkSection, bookmarkFunction } from "../bookmark/bookmark.js";
+import { bookmarkFunction } from "../bookmark/bookmark.js";
+import { showAnswerToggle } from "../button/button.js";
 
 const questionSection = document.querySelector('[data-js="questionSection"]');
 
 async function getQuizQuestions() {
 	try {
 		const response = await fetch("https://the-trivia-api.com/api/questions");
-		const data = response.json();
-		return data;
 		if (response.ok) {
 			const dataset = await response.json();
 			return dataset;
@@ -52,15 +51,8 @@ export function createNewCard(data) {
 		tag.textContent = getTags[i];
 		taglist.append(tag);
 	}
-	answerButton.addEventListener("click", () => {
-		answer.classList.toggle("answer--hidden");
-		if (answerButton.textContent === "Hide Answer") {
-			answerButton.textContent = "Show Answer";
-		} else {
-			answerButton.textContent = "Hide Answer";
-		}
-	});
 
+	showAnswerToggle(answerButton, answer);
 	return questionViewport;
 }
 
