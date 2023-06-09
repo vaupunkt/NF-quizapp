@@ -1,4 +1,4 @@
-# NF-QuizApp
+# QuizApp [Neue Fische - Web Developement]
 
 NF-QuizApp is a web application that allows you to test your knowledge on various topics. It is developed with HTML, CSS and JavaScript using Visual Studio Code as the editor. This project is part of the Bootcamp “Neue Fische” for web development.
 
@@ -7,7 +7,7 @@ NF-QuizApp is a web application that allows you to test your knowledge on variou
 - Read questions and click buttons to look up the answers.
 - Bookmark questions and view them on a bookmarks page.
 - Visit your profile page and see how many questions and bookmarks you have created.
-- reate your own questions and share them with others.
+- Create your own questions.
 
 ## Usage
 
@@ -22,7 +22,8 @@ NF-QuizApp is a web application that allows you to test your knowledge on variou
 ### (maybe coming soon as a feature)
 
 You can click on the create button to make your own question.
-On the create page, you will see a form where you can enter your question, answer and topic. You can also add an image URL if you want. After filling out the form, click on the submit button to save your question. You will then see a confirmation message and a link to view your question.
+On the create page, you will see a form where you can enter your question, answer and topic. After filling out the form, click on the submit button to save your question. 
+The Userquestions will appear under the form section.
 
 ## Contributing
 
