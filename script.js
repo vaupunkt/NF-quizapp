@@ -7,10 +7,7 @@ import {
 	prefersLightScheme,
 	currentTheme,
 } from "./utils/darkmode.js";
-import {
-	bookmarkToggle,
-	bookmarkIcons,
-} from "./components/bookmark/bookmark.js";
+
 import {
 	questionSectionSelect,
 	bookmarkSectionSelect,
@@ -21,11 +18,6 @@ import {
 	formNavItem,
 	profileNavItem,
 } from "./utils/pageSelection.js";
-import {
-	showAnswerButton,
-	showAnswerToggle,
-	showAnswerToggleAfterFetch,
-} from "./components/button/button.js";
 import { createQuestions } from "./components/questioncard/questionCard.js";
 
 if (currentTheme == "dark" || prefersDarkScheme.matches) {
@@ -35,11 +27,6 @@ if (currentTheme == "dark" || prefersDarkScheme.matches) {
 }
 
 darkmodeSwitch.addEventListener("click", darkmode);
-
-bookmarkIcons.forEach((bookmarkIcon) => bookmarkToggle(bookmarkIcon));
-showAnswerButton.forEach((answerButton, index) =>
-	showAnswerToggle(answerButton, index)
-);
 
 questionNavItem.addEventListener("click", questionSectionSelect);
 bookmarkNavItem.addEventListener("click", bookmarkSectionSelect);
