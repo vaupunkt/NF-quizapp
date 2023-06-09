@@ -1,14 +1,11 @@
 import { changeUserQuestionCounter } from "../userprofile/userprofile.js";
 
 const form = document.querySelector('[data-js="questionForm"]');
-const main = document.querySelector('[data-js="main"]');
-const userQuestionNumber = 0;
 
-form.addEventListener("submit", (event) => {
-	event.preventDefault();
-	const formData = new FormData(event.target);
-	const data = Object.fromEntries(formData);
+let userQuestionNumber = 0;
 
+export function formFunction(data) {
+	const formSection = document.querySelector('[data-js="formSection"]');
 	const questioncard = document.createElement("section");
 	const bookmark = document.createElement("button");
 	const bookmarkIcon = document.createElement("img");
@@ -27,7 +24,7 @@ form.addEventListener("submit", (event) => {
 	questioncardHeader.textContent = data.question;
 	answer.textContent = data.answer;
 
-	main.append(questioncard);
+	formSection.append(questioncard);
 	questioncard.style.marginTop = "50px";
 	questioncard.append(bookmark);
 	bookmark.append(bookmarkIcon);
@@ -47,18 +44,8 @@ form.addEventListener("submit", (event) => {
 	changeUserQuestionCounter(userQuestionNumber);
 	form.reset();
 	form.question.focus();
-});
+}
 
-const formTextareas = document.querySelectorAll('[data-js="formTextarea"]');
-
-formTextareas.forEach((textarea, index) => {
-	let counter = 150;
-	const lettercounter = document.querySelectorAll('[data-js="lettercounter"]');
-	textarea.addEventListener("input", () => {
-		const typedLetters = textarea.value.length;
-		if (typedLetters <= 150) {
-			lettercounter[index].textContent =
-				150 - typedLetters + " Characters left";
-		}
-	});
-});
+export const formTextareas = document.querySelectorAll(
+	'[data-js="formTextarea"]'
+);

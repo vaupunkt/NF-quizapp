@@ -7,7 +7,7 @@ import {
 	prefersLightScheme,
 	currentTheme,
 } from "./utils/darkmode.js";
-
+import { formFunction, formTextareas } from "./components/form/form.js";
 import {
 	questionSectionSelect,
 	bookmarkSectionSelect,
@@ -34,3 +34,20 @@ formNavItem.addEventListener("click", formSectionSelect);
 profileNavItem.addEventListener("click", profileSectionSelect);
 
 createQuestions();
+
+form.addEventListener("submit", (event) => {
+	event.preventDefault();
+	const formData = new FormData(event.target);
+	const data = Object.fromEntries(formData);
+	formFunction(data);
+});
+formTextareas.forEach((textarea, index) => {
+	const lettercounter = document.querySelectorAll('[data-js="lettercounter"]');
+	textarea.addEventListener("input", () => {
+		const typedLetters = textarea.value.length;
+		if (typedLetters <= 150) {
+			lettercounter[index].textContent =
+				150 - typedLetters + " Characters left";
+		}
+	});
+});
